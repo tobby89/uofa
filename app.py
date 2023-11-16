@@ -458,7 +458,7 @@ def seg_track_app():
         gr.Markdown(
             '''
             <div style="text-align:center;">
-                <span style="font-size:3em; font-weight:bold;">MM803 Assignment4 - Tobias 1841131</span>
+                <span style="font-size:3em; font-weight:bold;">Segment and Track Anything(SAM-Track)</span>
             </div>
             '''
         )
