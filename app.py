@@ -700,19 +700,19 @@ def seg_track_app():
             ]
         )
 
-        tab_img_seq_input.select(
-            fn = clean,
-            inputs=[],
-            outputs=[
-                input_video,
-                input_img_seq,
-                Seg_Tracker,
-                input_first_frame,
-                origin_frame,
-                drawing_board,
-                click_stack,
-            ]
-        )
+        #tab_img_seq_input.select(
+        #    fn = clean,
+        #    inputs=[],
+        #    outputs=[
+        #        input_video,
+        #        input_img_seq,
+        #        Seg_Tracker,
+        #        input_first_frame,
+        #        origin_frame,
+        #        drawing_board,
+        #        click_stack,
+        #    ]
+        #)
 
 
         extract_button.click(
