@@ -463,19 +463,6 @@ def seg_track_app():
             '''
         )
 
-    with gr.Tab(label='Video example'):
-        gr.Examples(
-            examples=[
-                # os.path.join(os.path.dirname(__file__), "assets", "840_iSXIa0hE8Ek.mp4"),
-                os.path.join(os.path.dirname(__file__), "assets", "blackswan.mp4"),
-                # os.path.join(os.path.dirname(__file__), "assets", "bear.mp4"),
-                # os.path.join(os.path.dirname(__file__), "assets", "camel.mp4"),
-                # os.path.join(os.path.dirname(__file__), "assets", "skate-park.mp4"),
-                # os.path.join(os.path.dirname(__file__), "assets", "swing.mp4"),
-                ],
-            inputs=[input_video],
-        )
-
         click_stack = gr.State([[],[]]) # Storage clicks status
         origin_frame = gr.State(None)
         Seg_Tracker = gr.State(None)
@@ -1090,7 +1077,20 @@ def seg_track_app():
             ]
         )
         
-        with gr.Tab(label=''):
+        with gr.Tab(label='Video example'):
+            gr.Examples(
+                examples=[
+                    # os.path.join(os.path.dirname(__file__), "assets", "840_iSXIa0hE8Ek.mp4"),
+                    os.path.join(os.path.dirname(__file__), "assets", "blackswan.mp4"),
+                    # os.path.join(os.path.dirname(__file__), "assets", "bear.mp4"),
+                    # os.path.join(os.path.dirname(__file__), "assets", "camel.mp4"),
+                    # os.path.join(os.path.dirname(__file__), "assets", "skate-park.mp4"),
+                    # os.path.join(os.path.dirname(__file__), "assets", "swing.mp4"),
+                    ],
+                inputs=[input_video],
+            )
+        
+        with gr.Tab(label='Image-seq expamle'):
             gr.Examples(
                 examples=[
                     os.path.join(os.path.dirname(__file__), "assets", "840_iSXIa0hE8Ek.zip"),
