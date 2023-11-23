@@ -484,7 +484,7 @@ def seg_track_app():
                 with tab_video_input:
                     input_video = gr.Video(label='Input video').style(height=550)
                 
-                tab_img_seq_input = gr.Tab(label="Image-Seq type input")
+                tab_img_seq_input = gr.Tab(label="")
                 with tab_img_seq_input:
                     with gr.Row():
                         input_img_seq = gr.File(label='Input Image-Seq').style(height=550)
